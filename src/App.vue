@@ -1,18 +1,26 @@
 <template>
   <div id="app">
 
+    <!-- Header -->
     <Navigation 
         :brand="brand" 
         :links="links">
     </Navigation>
-
-    <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
-        <div class="col-md-12 col-xl-12 py-md-3 pl-md-5 bd-content">
-          <router-view />
+    
+    <!-- Body -->
+    <main class="container-fluid">
+        <div class="row flex-xl-nowrap">
+          <div class="col-md-12 col-xl-12 py-md-3 pl-md-5 bd-content">
+            <router-view />
+          </div>
         </div>
-      </div>
-    </div>
+    </main>
+
+    <!-- Footer -->
+    <Footer 
+        :link="'https://www.linkedin.com/in/lorenzokniss/'" 
+        :text="'Lorenzo Kniss'">
+    </Footer>
 
   </div>
 </template>
@@ -20,11 +28,13 @@
 <script>
 // @ is an alias to /src
 import Navigation from "@/components/Navigation.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    Navigation
+    Navigation,
+    Footer
   },
   data() {
     return {
