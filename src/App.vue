@@ -32,21 +32,16 @@ export default {
       links: [
         {
           id: 1,
-          path: "/about",
-          text: "Sobre"
-        },
-        {
-          id: 2,
           path: "#",
           text: "Usuários",
           children: [
             {
-              id: 2.1,
+              id: 1.1,
               path: "/users",
               text: "Listagem"
             },
             {
-              id: 2.2,
+              id: 1.2,
               path: "/users/create",
               text: "Cadastrar"
             }

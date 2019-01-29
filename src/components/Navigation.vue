@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
-    <a class="navbar-brand" href="#">{{ brand }}</a>
+    <router-link :to="'/'" class="navbar-brand"> {{ brand }} </router-link>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

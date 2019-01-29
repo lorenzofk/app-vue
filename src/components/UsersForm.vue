@@ -7,7 +7,6 @@
         <div class="row justify-content-center align-items-center h-100">
             <div class="col col-sm-12 col-md-12 col-lg-8 col-xl-8">
                 <form>
-
                     <input-string
                         :label="labels.name"
                         :minLength="3"
@@ -23,7 +22,6 @@
                     
                     <button type="button" class="btn btn-space btn-secondary">Clear</button>
                     <button type="button" class="btn btn-space btn-primary">Create</button>
-                    
                 </form>
             </div>
         </div>
