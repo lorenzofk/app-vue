@@ -21,11 +21,11 @@ export default {
 <style scoped>
   
   .footer {
-      position: absolute;
+      position: fixed;
       bottom: 0;
       width: 100%;
-      height: 60px;
-      line-height: 60px;
+      height: 30px;
+      line-height: 30px;
       background-color: #007bff;
   }
 
