@@ -43,19 +43,24 @@ export default {
         {
           id: 1,
           path: "#",
-          text: "Usuários",
+          text: "Users",
           children: [
             {
               id: 1.1,
               path: "/users",
-              text: "Listagem"
+              text: "List"
             },
             {
               id: 1.2,
               path: "/users/create",
-              text: "Cadastrar"
+              text: "Create"
             }
           ]
+        },
+        {
+          id: 2,
+          path: '/resume',
+          text: 'Resume CV'
         }
       ]
     };
@@ -66,4 +71,12 @@ export default {
 <style lang="scss">
   @import './assets/custom-bootstrap.scss';
   @import '../node_modules/bootstrap/scss/bootstrap.scss';
+</style>
+
+<style>
+  
+  .container-fluid {
+    margin-bottom: 30px;
+  }
+
 </style>
