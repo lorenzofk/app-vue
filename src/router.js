@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import UsersList from "./components/UsersList.vue";
 import UsersForm from "./components/UsersForm.vue";
+import Resume from "./components/Resume.vue";
 
 Vue.use(Router);
 
@@ -24,6 +25,11 @@ export default new Router({
       path: "/users/create",
       name: "users-create",
       component: UsersForm
+    },
+    {
+      path: "/resume",
+      name: "resume",
+      component: Resume
     },
   ],
   linkExactActiveClass: "active"
